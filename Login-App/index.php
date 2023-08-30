@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Register - Responsive App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="back-box">
+          <div class="back-box-login">
+            <h3>Do you have an account?</h3>
+            <p>Log in to use the service</p>
+            <button id="btn-login">Log in</button>
+          </div>
+
+          <div class="back-box-register">
+            <h3>I don't have an account</h3>
+            <p>Register to our service today</p>
+            <button id="btn-register">Register</button>
+          </div>
+        </div>
+
+        <!--Login and Register Forms-->
+        <div class="forms-container">
+          <!--Login Form-->
+
+          <form class="login-form">
+            <h2>Log in</h2>
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Password" />
+            <button>Log in</button>
+          </form>
+
+          <!--Register Form-->
+
+          <form action="php/register-user-backend.php" method="POST" class="register-form">
+            <h2>Register</h2>
+            <input type="text" placeholder="Full Name" name="full_name" />
+            <input type="text" placeholder="E-mail" name="email"/>
+            <input type="text" placeholder="Username" name="username"/>
+            <input type="password" placeholder="Password" name="password" />
+            <button>Register</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
